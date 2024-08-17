@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="175.326" tests="11" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\EclipseWorkstationForHome\JavaTraining\FreeCRMTest03\target\test-classes;D:\EclipseWorkstationForHome\JavaTraining\FreeCRMTest03\target\classes;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.23.0\selenium-java-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.23.0\selenium-api-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.23.0\selenium-chrome-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.23.0\selenium-chromium-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.23.0\selenium-devtools-v125-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.23.0\selenium-devtools-v126-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.23.0\selenium-devtools-v127-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.23.0\selenium-devtools-v85-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.23.0\selenium-edge-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.23.0\selenium-firefox-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.23.0\selenium-ie-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.23.0\selenium-safari-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.23.0\selenium-support-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.23.0\selenium-remote-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.40.0\opentelemetry-api-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.40.0\opentelemetry-context-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.40.0\opentelemetry-exporter-logging-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.40.0\opentelemetry-sdk-common-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.40.0\opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.40.0\opentelemetry-sdk-extension-autoconfigure-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.40.0-alpha\opentelemetry-api-incubator-1.40.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.40.0\opentelemetry-sdk-trace-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.40.0\opentelemetry-sdk-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.40.0\opentelemetry-sdk-metrics-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.40.0\opentelemetry-sdk-logs-1.40.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.23.0\selenium-http-4.23.0.jar;C:\Users\DELL\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.23.0\selenium-json-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.23.0\selenium-manager-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-os\4.23.0\selenium-os-4.23.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\DELL\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\DELL\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\DELL\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\poi\ooxml-schemas\1.4\ooxml-schemas-1.4.jar;C:\Users\DELL\.m2\repository\org\apache\poi\openxml4j\1.0-beta\openxml4j-1.0-beta.jar;C:\Users\DELL\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\DELL\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\DELL\.m2\repository\log4j\log4j\1.2.8\log4j-1.2.8.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-scratchpad\5.3.0\poi-scratchpad-5.3.0.jar;C:\Users\DELL\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\DELL\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\DELL\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\DELL\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire9099972311598516786\surefirebooter2181727959411111948.jar C:\Users\DELL\AppData\Local\Temp\surefire9099972311598516786 2024-08-16T19-13-49_671-jvmRun1 surefire15770160911704009851tmp surefire_03520963090763886141tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\EclipseWorkstationForHome\JavaTraining\FreeCRMTest03\target\test-classes;D:\EclipseWorkstationForHome\JavaTraining\FreeCRMTest03\target\classes;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-java\4.23.0\selenium-java-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-api\4.23.0\selenium-api-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.23.0\selenium-chrome-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.23.0\selenium-chromium-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.23.0\selenium-devtools-v125-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.23.0\selenium-devtools-v126-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.23.0\selenium-devtools-v127-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.23.0\selenium-devtools-v85-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.23.0\selenium-edge-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.23.0\selenium-firefox-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.23.0\selenium-ie-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.23.0\selenium-safari-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-support\4.23.0\selenium-support-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.23.0\selenium-remote-driver-4.23.0.jar;C:\Users\DELL\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\DELL\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\DELL\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\DELL\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\DELL\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\DELL\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\DELL\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\DELL\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api\1.40.0\opentelemetry-api-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-context\1.40.0\opentelemetry-context-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.40.0\opentelemetry-exporter-logging-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.40.0\opentelemetry-sdk-common-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.40.0\opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.40.0\opentelemetry-sdk-extension-autoconfigure-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.40.0-alpha\opentelemetry-api-incubator-1.40.0-alpha.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.40.0\opentelemetry-sdk-trace-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.40.0\opentelemetry-sdk-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.40.0\opentelemetry-sdk-metrics-1.40.0.jar;C:\Users\DELL\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.40.0\opentelemetry-sdk-logs-1.40.0.jar;C:\Users\DELL\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-http\4.23.0\selenium-http-4.23.0.jar;C:\Users\DELL\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-json\4.23.0\selenium-json-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.23.0\selenium-manager-4.23.0.jar;C:\Users\DELL\.m2\repository\org\seleniumhq\selenium\selenium-os\4.23.0\selenium-os-4.23.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\DELL\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\DELL\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\DELL\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\DELL\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\DELL\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\DELL\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\DELL\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\DELL\.m2\repository\org\apache\poi\ooxml-schemas\1.4\ooxml-schemas-1.4.jar;C:\Users\DELL\.m2\repository\org\apache\poi\openxml4j\1.0-beta\openxml4j-1.0-beta.jar;C:\Users\DELL\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\DELL\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\DELL\.m2\repository\log4j\log4j\1.2.8\log4j-1.2.8.jar;C:\Users\DELL\.m2\repository\org\apache\poi\poi-scratchpad\5.3.0\poi-scratchpad-5.3.0.jar;C:\Users\DELL\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\DELL\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\DELL\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\DELL\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\DELL\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DELL"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\EclipseWorkstationForHome\JavaTraining\FreeCRMTest03"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire9099972311598516786\surefirebooter2181727959411111948.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="DELL"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="D:\EclipseWorkstationForHome\JavaTraining\FreeCRMTest03"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\DELL\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\TestMaven/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="verifyContactLabel" classname="com.crm.qa.testcases.ContactsPagTest" time="0.142"/>
+  <testcase name="selectSigleContactTest" classname="com.crm.qa.testcases.ContactsPagTest" time="30.696">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(), &apos;Sanjay Verma&apos;)]/parent::td//preceding-sibling::td//div[@class=&apos;ui fitted read-only checkbox&apos;]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9e107d163c385934a1f147482bc6897e, findElement {value=//a[contains(text(), &apos;Sanjay Verma&apos;)]/parent::td//preceding-sibling::td//div[@class=&apos;ui fitted read-only checkbox&apos;], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51790}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51790/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9e107d163c385934a1f147482bc6897e" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(), 'Sanjay Verma')]/parent::td//preceding-sibling::td//div[@class='ui fitted read-only checkbox']"}
+  (Session info: chrome=127.0.6533.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e107d163c385934a1f147482bc6897e, findElement {value=//a[contains(text(), 'Sanjay Verma')]/parent::td//preceding-sibling::td//div[@class='ui fitted read-only checkbox'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51790}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51790/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e107d163c385934a1f147482bc6897e
+	at com.crm.qa.testcases.ContactsPagTest.selectSigleContactTest(ContactsPagTest.java:47)
+</failure>
+    <system-out><![CDATA[Before calling method: quit
+Before calling WebDriver method: quit
+Before quitting the WebDriver.
+After quitting the WebDriver.
+After calling WebDriver method: quit
+After calling method: quit
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: window
+After calling method: window
+Before calling method: maximize
+After calling method: maximize
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: deleteAllCookies
+After calling method: deleteAllCookies
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: timeouts
+After calling method: timeouts
+Before calling method: pageLoadTimeout
+After calling method: pageLoadTimeout
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: timeouts
+After calling method: timeouts
+Before calling method: implicitlyWait
+After calling method: implicitlyWait
+Before calling method: get
+Before calling WebDriver method: get
+Before navigating to URL: https://ui.freecrm.com/
+After navigating to URL: https://ui.freecrm.com/
+After calling WebDriver method: get
+After calling method: get
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.name: email
+After finding element by: By.name: email
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: sendKeys
+Before calling WebElement method: sendKeys
+Before sending keys to element.
+After sending keys to element.
+After calling WebElement method: sendKeys
+After calling method: sendKeys
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.name: password
+After finding element by: By.name: password
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: sendKeys
+Before calling WebElement method: sendKeys
+Before sending keys to element.
+After sending keys to element.
+After calling WebElement method: sendKeys
+After calling method: sendKeys
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //div[text()='Login']
+After finding element by: By.xpath: //div[text()='Login']
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: click
+Before calling WebElement method: click
+Before clicking on element.
+After clicking on element.
+After calling WebElement method: click
+After calling method: click
+Before calling method: perform
+Before calling WebDriver method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After calling WebDriver method: findElement
+After calling method: findElement
+After calling WebDriver method: perform
+After calling method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: click
+Before calling WebElement method: click
+Before clicking on element.
+After clicking on element.
+After calling WebElement method: click
+After calling method: click
+Before calling method: perform
+Before calling WebDriver method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //button[contains(text(), 'Show Filters')]
+After finding element by: By.xpath: //button[contains(text(), 'Show Filters')]
+After calling WebDriver method: findElement
+After calling method: findElement
+After calling WebDriver method: perform
+After calling method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //a[contains(text(), 'Sanjay Verma')]/parent::td//preceding-sibling::td//div[@class='ui fitted read-only checkbox']
+Error while calling method: findElement - null
+Exception occured: findElement
+Before calling method: getScreenshotAs
+Before calling WebDriver method: getScreenshotAs
+After calling WebDriver method: getScreenshotAs
+After calling method: getScreenshotAs
+]]></system-out>
+  </testcase>
+  <testcase name="selectMultipleContactTest" classname="com.crm.qa.testcases.ContactsPagTest" time="30.622">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(), &apos;Ashu Gagan&apos;)]/parent::td//preceding-sibling::td//div[@class=&apos;ui fitted read-only checkbox&apos;]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6f4e88a239eaf1b17254b01dd03f7af1, findElement {value=//a[contains(text(), &apos;Ashu Gagan&apos;)]/parent::td//preceding-sibling::td//div[@class=&apos;ui fitted read-only checkbox&apos;], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51858/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6f4e88a239eaf1b17254b01dd03f7af1" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(), 'Ashu Gagan')]/parent::td//preceding-sibling::td//div[@class='ui fitted read-only checkbox']"}
+  (Session info: chrome=127.0.6533.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f4e88a239eaf1b17254b01dd03f7af1, findElement {value=//a[contains(text(), 'Ashu Gagan')]/parent::td//preceding-sibling::td//div[@class='ui fitted read-only checkbox'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51858/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f4e88a239eaf1b17254b01dd03f7af1
+	at com.crm.qa.testcases.ContactsPagTest.selectMultipleContactTest(ContactsPagTest.java:53)
+</failure>
+    <system-out><![CDATA[Before calling method: quit
+Before calling WebDriver method: quit
+Before quitting the WebDriver.
+After quitting the WebDriver.
+After calling WebDriver method: quit
+After calling method: quit
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: window
+After calling method: window
+Before calling method: maximize
+After calling method: maximize
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: deleteAllCookies
+After calling method: deleteAllCookies
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: timeouts
+After calling method: timeouts
+Before calling method: pageLoadTimeout
+After calling method: pageLoadTimeout
+Before calling method: manage
+Before calling WebDriver method: manage
+After calling WebDriver method: manage
+After calling method: manage
+Before calling method: timeouts
+After calling method: timeouts
+Before calling method: implicitlyWait
+After calling method: implicitlyWait
+Before calling method: get
+Before calling WebDriver method: get
+Before navigating to URL: https://ui.freecrm.com/
+After navigating to URL: https://ui.freecrm.com/
+After calling WebDriver method: get
+After calling method: get
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.name: email
+After finding element by: By.name: email
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: sendKeys
+Before calling WebElement method: sendKeys
+Before sending keys to element.
+After sending keys to element.
+After calling WebElement method: sendKeys
+After calling method: sendKeys
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.name: password
+After finding element by: By.name: password
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: sendKeys
+Before calling WebElement method: sendKeys
+Before sending keys to element.
+After sending keys to element.
+After calling WebElement method: sendKeys
+After calling method: sendKeys
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //div[text()='Login']
+After finding element by: By.xpath: //div[text()='Login']
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: click
+Before calling WebElement method: click
+Before clicking on element.
+After clicking on element.
+After calling WebElement method: click
+After calling method: click
+Before calling method: perform
+Before calling WebDriver method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After calling WebDriver method: findElement
+After calling method: findElement
+After calling WebDriver method: perform
+After calling method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After finding element by: By.xpath: //span[contains(text(), 'Contacts')]
+After calling WebDriver method: findElement
+After calling method: findElement
+Before calling method: click
+Before calling WebElement method: click
+Before clicking on element.
+After clicking on element.
+After calling WebElement method: click
+After calling method: click
+Before calling method: perform
+Before calling WebDriver method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //button[contains(text(), 'Show Filters')]
+After finding element by: By.xpath: //button[contains(text(), 'Show Filters')]
+After calling WebDriver method: findElement
+After calling method: findElement
+After calling WebDriver method: perform
+After calling method: perform
+Before calling method: findElement
+Before calling WebDriver method: findElement
+Before finding element by: By.xpath: //a[contains(text(), 'Ashu Gagan')]/parent::td//preceding-sibling::td//div[@class='ui fitted read-only checkbox']
+Error while calling method: findElement - null
+Exception occured: findElement
+Before calling method: getScreenshotAs
+Before calling WebDriver method: getScreenshotAs
+After calling WebDriver method: getScreenshotAs
+After calling method: getScreenshotAs
+]]></system-out>
+  </testcase>
+  <testcase name="validateCreateNewContact" classname="com.crm.qa.testcases.ContactsPagTest" time="2.071"/>
+  <testcase name="validateCreateNewContact" classname="com.crm.qa.testcases.ContactsPagTest" time="1.869"/>
+  <testcase name="validateCreateNewContact" classname="com.crm.qa.testcases.ContactsPagTest" time="2.235"/>
+  <testcase name="HomePageTitleTest" classname="com.crm.qa.testcases.HomePageTest" time="0.01"/>
+  <testcase name="userNameTest" classname="com.crm.qa.testcases.HomePageTest" time="2.267"/>
+  <testcase name="contactLinkTest" classname="com.crm.qa.testcases.HomePageTest" time="2.886"/>
+  <testcase name="loginPageTitleTest" classname="com.crm.qa.testcases.LoginPageTest" time="0.011"/>
+  <testcase name="loginTest" classname="com.crm.qa.testcases.LoginPageTest" time="5.679"/>
+</testsuite>
