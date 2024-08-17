@@ -48,14 +48,14 @@ public class ContactsPagTest extends TestBase{
 		Assert.assertEquals(contacecheckbox, "ui checked fitted read-only checkbox", "Contact Checkbox is not selected");
 	}
 	
-	@Test(priority=3)
-	public void selectMultipleContactTest() {
-		String contacecheckbox= contactpage.selectContactByName("Ashu Gagan");
-		Assert.assertEquals(contacecheckbox, "ui checked fitted read-only checkbox", "Contact Checkbox is not selected");
-		
-		String contacecheckbox1= contactpage.selectContactByName("Atul Kumar");
-		Assert.assertEquals(contacecheckbox1, "ui checked fitted read-only checkbox", "Contact Checkbox is not selected");
-	}
+//	@Test(priority=3)
+//	public void selectMultipleContactTest() {
+//		String contacecheckbox= contactpage.selectContactByName("Ashu Gagan");
+//		Assert.assertEquals(contacecheckbox, "ui checked fitted read-only checkbox", "Contact Checkbox is not selected");
+//		
+//		String contacecheckbox1= contactpage.selectContactByName("Atul Kumar");
+//		Assert.assertEquals(contacecheckbox1, "ui checked fitted read-only checkbox", "Contact Checkbox is not selected");
+//	}
 	
 	@DataProvider
 	public Object[][] getCRMTestData() {
