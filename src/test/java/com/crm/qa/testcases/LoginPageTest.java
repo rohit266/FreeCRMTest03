@@ -22,7 +22,7 @@ public class LoginPageTest extends TestBase{
 	public void setUp() {
 		initialization();
 		loginpage = new LoginPage();
-		System.out.println("Check Pull Request");
+		//System.out.println("Check Pull Request");
 	}
 	
 	@Test(priority=1)
