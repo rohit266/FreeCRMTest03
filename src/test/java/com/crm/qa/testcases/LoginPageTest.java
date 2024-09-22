@@ -22,7 +22,8 @@ public class LoginPageTest extends TestBase{
 	public void setUp() {
 		initialization();
 		loginpage = new LoginPage();
-		System.out.println("Check Pull Request");
+		System.out.println("Check Pull Request is FIRE");
+		System.out.println("Testing");
 	}
 	
 	@Test(priority=1)
