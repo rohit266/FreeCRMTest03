@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
+import com.crm.qa.utilities.TestUtil;
 
 public class ContactsPage extends TestBase{
 
@@ -30,6 +31,9 @@ public class ContactsPage extends TestBase{
 	
 	@FindBy(xpath = "//button[@class='ui linkedin button']")
 	WebElement saveBtn;
+	
+	@FindBy(xpath="//span[contains(text(), 'Contacts')]")
+	WebElement contactlinks;
 	
 	public ContactsPage() {
 		PageFactory.initElements(driver, this);
@@ -60,11 +64,18 @@ public class ContactsPage extends TestBase{
 		
 	}
 	
-	public void createNewContact(String ftName, String ltName, String email) {
+	public boolean createNewContact(String ftName, String ltName, String email) {
 		createContactButton.click();
 		firstName.sendKeys(ftName);
 		lastName.sendKeys(ltName);
 		emailAddress.sendKeys(email);
 		saveBtn.click();
+		WebElement contactElement = driver.findElement(By.xpath("//span[text()= '"+ftName+" "+ ltName+"']"));
+		TestUtil.visible(driver, contactElement, 30);
+		Actions action = new Actions(driver);
+		action.moveToElement(contactlinks).click().build().perform();
+		action.moveToElement(contactfilter).build().perform();
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'"+ftName+" "+ltName+"')]"));
+		return element.isDisplayed();
 	}
 }

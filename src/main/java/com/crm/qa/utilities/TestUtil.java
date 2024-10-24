@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.compress.archivers.dump.InvalidFormatException;
 import org.apache.commons.io.FileUtils;
@@ -11,7 +12,12 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
 
@@ -54,6 +60,20 @@ public class TestUtil extends TestBase{
 			}
 		}
 		return data;
+	}
+	
+	//We can use that method same as in any class for Explicit wait for specific element for click action
+	public static void clickon(WebDriver driver, WebElement locator, int timeout) {
+		//Explicit Wait and this is happening for specific element
+		new WebDriverWait(driver, Duration.ofSeconds(timeout)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(locator));
+		locator.click(); 
+	}
+	
+	//We can use that method same as in any class for Explicit wait for specific element to check visibility
+	public static void visible(WebDriver driver, WebElement locator, int timeout) {
+		//Explicit Wait and this is happening for specific element
+		new WebDriverWait(driver, Duration.ofSeconds(timeout)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOf(locator));
+		locator.click(); 
 	}
 	
 	public static void takeScreenshotAtEndOfTest() throws IOException {

@@ -66,7 +66,8 @@ public class ContactsPagTest extends TestBase{
 	@Test(priority=4, dataProvider="getCRMTestData")
 	public void validateCreateNewContact(String ftName, String ltName, String email) {
 		//contactpage.createNewContact("Manju", "Sharma", "manju123@yopmail.com");
-		contactpage.createNewContact(ftName, ltName, email);
+		boolean b =contactpage.createNewContact(ftName, ltName, email);
+		Assert.assertEquals(b, true, "Contact Not Created");
 		
 	}
 	

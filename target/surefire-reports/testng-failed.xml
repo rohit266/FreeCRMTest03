@@ -8,7 +8,6 @@
           <include name="setUp"/>
           <include name="selectSigleContactTest"/>
           <include name="tearDown"/>
-          <include name="selectMultipleContactTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPagTest -->
     </classes>
